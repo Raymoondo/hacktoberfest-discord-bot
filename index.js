@@ -47,6 +47,8 @@ client.on('message', async (msg) => {
     });
   } else if(command === 'scream') {
     msg.reply(args.join(' ').toUpperCase());
+  } else if(command === 'cooltextify') {
+    msg.reply(args.join(' ').replace(/[a-zA-Z]/, ':regional_indicator_$&: '));
   }
 })
 
